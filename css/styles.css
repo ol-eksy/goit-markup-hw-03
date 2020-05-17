@@ -294,6 +294,13 @@ body {
 .s-networks-links:not(:last-child) {
   margin-right: 10px;
 }
+
+.developed-by {
+  text-align: center;
+  font-size: 12px;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.4);
+}
 /* Стили main index.html (Студия) */
 
 .main {
