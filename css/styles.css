@@ -413,6 +413,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
 
   color: var(--main-color-headers);
 }
