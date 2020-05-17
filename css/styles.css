@@ -74,7 +74,7 @@ body {
   text-decoration: none;
 }
 .head {
-  margin-bottom: 94px;
+  margin-bottom: 0;
 }
 .header {
   background-color: var(--main-white-color);
@@ -127,13 +127,15 @@ body {
 }
 
 /*Стили Портфолио main */
-.list .button {
+.list-button .button {
+  min-width: 75px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   color: var(--main-color-headers);
   background-color: var(--main-color-filter);
+  border: 1px solid transparent;
 }
 
 .button {
@@ -155,9 +157,13 @@ body {
   justify-content: center;
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
+.buttons {
+  padding-top: 94px;
+  /* outline: 2px solid red; */
+}
 .list .list-button:not(:last-child) {
   margin-right: 8px;
 }
@@ -180,7 +186,7 @@ body {
   margin-bottom: 30px;
 }
 
-.link .image {
+.image {
   display: block;
 }
 
@@ -192,7 +198,9 @@ body {
   margin-bottom: 0;
 }
 .main-examples {
-  margin-bottom: 95px;
+  padding-top: 50px;
+  padding-bottom: 95px;
+  /* outline: 2px solid red; */
 }
 .bottom-element {
   padding-left: 25px;
@@ -287,7 +295,14 @@ body {
   margin-right: 10px;
 }
 /* Стили main index.html (Студия) */
+
+.main {
+  text-align: center;
+  padding-top: 210px;
+}
 .main-title {
+  margin-top: 0;
+  margin-bottom: 45px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -298,16 +313,34 @@ body {
 }
 
 .main .button {
+  padding: 18px 32px;
+  min-width: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
+  border: 1px solid transparent;
   letter-spacing: 0.06em;
   color: var(--main-white-color);
   background-color: var(--accent-color);
 }
 
+.features {
+  padding-top: 94px;
+}
+
+.features-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.features-item {
+  margin-right: 30px;
+}
 .title-list {
+  margin-top: 30px;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -316,11 +349,36 @@ body {
 }
 
 .text-list {
+  margin-top: 23px;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
   color: #757575;
 }
+
+/* Чем мы занимаемся */
+
+.doing {
+  padding-top: 99px;
+
+  /* outline: 2px solid tomato; */
+}
+
+.list-doing {
+  display: flex;
+  padding-left: 0;
+}
+
+.doing-link {
+  display: block;
+}
+
+.doing-item {
+  margin-right: 30px;
+}
 .title-doing {
+  margin-top: 0;
+  margin-bottom: 60px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -328,6 +386,9 @@ body {
   color: var(--main-color-headers);
 }
 .title-details {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 27px 86px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -340,20 +401,39 @@ body {
 /* Наша команда */
 .section-team {
   background-color: var(--main-color-filter);
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  /* outline: 2px solid green; */
 }
 
 .title-team {
+  margin-top: 0;
+  margin-bottom: 60px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
+
   color: var(--main-color-headers);
 }
 
+.section-team .team-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
 .team-element {
+  padding-bottom: 24px;
   background-color: var(--main-white-color);
+  text-align: center;
+}
+
+.team-element:not(:last-child) {
+  margin-right: 30px;
 }
 .team-name {
+  margin-top: 30px;
+  margin-bottom: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -361,19 +441,60 @@ body {
 }
 
 .team-profession {
+  margin-top: 20px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.18;
   color: #757575;
 }
 
+.section-team .slinks {
+  margin-top: 20px;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link-slink:hover {
+  background-color: var(--accent-color);
+}
+.link-slink:not(:last-child) {
+  margin-right: 38px;
+}
+.slinks .link-slink:first-child {
+  margin-right: 24px;
+}
 /* Постоянные клиенты */
+
+.clients {
+  /* outline: 2px solid red; */
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
 .title-clients {
+  margin-top: 0;
+  margin-bottom: 85px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
+  /* text-align: center; */
   color: var(--main-color-headers);
 }
 .client:hover {
   color: var(--accent-color);
+}
+
+.main {
+  /* outline: 2px solid red; */
+}
+.features {
+  /* outline: 2px solid green; */
 }
