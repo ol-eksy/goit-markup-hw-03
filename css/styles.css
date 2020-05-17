@@ -360,11 +360,12 @@ body {
 
 .doing {
   padding-top: 99px;
-
-  /* outline: 2px solid tomato; */
+  padding-bottom: 94px;
 }
 
 .list-doing {
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
   padding-left: 0;
 }
