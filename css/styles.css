@@ -206,6 +206,7 @@ body {
   padding-left: 25px;
   padding-top: 30px;
   padding-bottom: 30px;
+  /* padding-right: 238px; */
 }
 .title {
   font-weight: 700;
@@ -238,8 +239,9 @@ body {
 }
 
 .adress-info {
+  width: 410px;
   font-style: normal;
-  margin-right: 195px;
+  margin-right: 0;
 }
 .logo-footer {
   font-family: Raleway, sans-serif;
@@ -262,6 +264,10 @@ body {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-s-links {
+  width: 308px;
+}
 .footer .action {
   font-weight: 700;
   font-size: 14px;
@@ -269,9 +275,14 @@ body {
   text-transform: uppercase;
   color: var(--main-white-color);
 }
-.contacts-email {
+.contacts-email,
+.contacts-phone {
   display: inline-block;
   margin-bottom: 19px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.6);
 }
 .container-footer {
   display: flex;
@@ -286,7 +297,7 @@ body {
   padding-left: 0;
   list-style: none;
   margin-bottom: 0;
-  margin-right: 100px;
+  margin-right: 0;
   margin-top: 20px;
   display: flex;
 }
@@ -301,6 +312,20 @@ body {
   line-height: 2;
   color: rgba(255, 255, 255, 0.4);
 }
+
+.footer-link-action {
+  width: 483px;
+}
+.contacts .contacts-email:hover,
+.contacts .contacts-email:focus {
+  color: var(--accent-color);
+}
+
+.contacts .contacts-phone:hover,
+.contacts .contacts-phone:focus {
+  color: var(--accent-color);
+}
+
 /* Стили main index.html (Студия) */
 
 .main {
@@ -343,8 +368,12 @@ body {
 }
 
 .features-item {
+  width: calc((100% - 90px) / 4);
+}
+.features-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .title-list {
   margin-top: 30px;
   margin-bottom: 0;
@@ -382,6 +411,9 @@ body {
 }
 
 .doing-item {
+  width: calc((100% - 60px) / 3);
+}
+.doing-item:not(:last-child) {
   margin-right: 30px;
 }
 .title-doing {
